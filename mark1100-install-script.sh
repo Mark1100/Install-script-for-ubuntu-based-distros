@@ -3,6 +3,7 @@
 desktop_path=$(xdg-user-dir DESKTOP)
 
 sudo apt-get update
+sudo apt-get upgrade -y
 
 #PPA--------------------------------------
 sudo add-apt-repository -y ppa:inkscape.dev/stable
