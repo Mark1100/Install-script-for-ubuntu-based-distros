@@ -160,4 +160,5 @@ echo -------------------
 echo appimage: cura etcher openrgb
 echo Default alkalmazasok
 echo Oh-my-ZSH install es powerlevel10k
+echo grub2 tema
 echo Majd ujrainditas
