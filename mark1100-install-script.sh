@@ -151,6 +151,8 @@ sudo sh ~/installer-temp/visualbukkit.sh
 
 sudo apt autoremove -y
 
+pip install trimesh
+
 clear
 echo Lefutott minden!
 
