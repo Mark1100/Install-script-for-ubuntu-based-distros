@@ -152,6 +152,7 @@ sudo sh ~/installer-temp/visualbukkit.sh
 sudo apt autoremove -y
 
 pip install trimesh
+pip install structlog-sentry-logger
 
 clear
 echo Lefutott minden!
