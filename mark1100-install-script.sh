@@ -15,7 +15,7 @@ sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo add-apt-repository -y ppa:yannubuntu/boot-repair
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 sudo add-apt-repository -y ppa:ztefn/haguichi-stable
-sudo add-apt-repository -y ppa:thopiekar/cura-master
+#sudo add-apt-repository -y ppa:thopiekar/cura-master
 #PPA--------------------------------------
 
 sudo apt-get update
