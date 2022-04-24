@@ -33,6 +33,13 @@ flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub com.heroicgameslauncher.hgl
 flatpak install -y flathub net.blockbench.Blockbench
 flatpak install -y flathub com.brave.Browser
+flatpak install -y flathub com.spotify.Client
+flatpak install -y flathub com.visualstudio.code
+flatpak install -y flathub us.zoom.Zoom
+flatpak install -y flathub com.github.micahflee.torbrowser-launcher
+flatpak install -y flathub md.obsidian.Obsidian
+flatpak install -y flathub org.onlyoffice.desktopeditors
+flatpak install -y flathub de.haeckerfelix.Shortwave
 
 #XRDP----------------------------------------
 
@@ -71,9 +78,6 @@ sudo dpkg -i ~/installer-temp/sejda.deb
 wget -O ~/installer-temp/blobsaver.deb https://github.com/airsquared/blobsaver/releases/download/v3.0.4/blobsaver_3.0.4-1_amd64.deb
 sudo dpkg -i ~/installer-temp/blobsaver.deb
 
-wget -O ~/installer-temp/vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868 
-sudo dpkg -i ~/installer-temp/vscode.deb
-
 #wget -O ~/installer-temp/Minecraft-raw.zip https://tlauncher.org/jar
 #unzip ~/installer-temp/Minecraft-raw.zip -d ~/installer-temp/
 #cp ~/installer-temp/TLaunch* $desktop_path/Utils/Minecraft.jar
@@ -86,11 +90,6 @@ echo "sudo apt upgrade -y" >> $desktop_path/Utils/Update.sh
 echo "sudo apt full-upgrade -y" >> $desktop_path/Utils/Update.sh
 echo "sudo apt dist-upgrade -y" >> $desktop_path/Utils/Update.sh
 chmod +x $desktop_path/Utils/Update.sh
-
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update
-sudo apt-get install -y spotify-client
 
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
 cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
@@ -118,11 +117,6 @@ echo 'deb https://assets.checkra.in/debian /' | sudo tee /etc/apt/sources.list.d
 sudo apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key
 sudo apt-get update
 sudo apt-get install -y checkra1n
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys CB2DE8E5
-echo 'deb https://download.onlyoffice.com/repo/debian squeeze main' | sudo tee -a /etc/apt/sources.list.d/onlyoffice.list
-sudo apt-get update
-sudo apt-get install -y onlyoffice-desktopeditors
 
 wget -O ~/installer-temp/visualbukkit.sh https://github.com/OfficialDonut/VisualBukkit/releases/download/4.3.1/VisualBukkit_unix_4_3_1.sh
 sudo chmod +x ~/installer-temp/visualbukkit.sh
