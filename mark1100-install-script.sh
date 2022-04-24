@@ -21,7 +21,9 @@ sudo add-apt-repository -y ppa:ztefn/haguichi-stable
 sudo apt-get update
 
 #APT--------------------------------------
-sudo apt-get install -y freecad python3-pip cura qml-module-qt-labs-qmlmodels grub-customizer haguichi system-config-printer-gnome cups printer-driver-cups-pdf hplip system-config-printer vlc blender curl synaptic firefox firefox-locale-hu wget filezilla catfish ark hardinfo zsh hardinfo filelight gparted okular gdebi qalculate-gtk youtube-dl thunderbird obs-studio audacity handbrake transmission network-manager-openvpn numlockx pinta language-pack-gnome-hu openvpn gimp git piper tcpdump gimp-gmic kmines clementine tar hddtemp lm-sensors screen openssh-client openssh-server muon ksysguard krita xfce4-whiskermenu-plugin htop openjdk-8-jdk mysql-client php unzip p7zip p7zip-full p7zip-rar sudo jarwrapper openjdk-8-jre kio-gdrive gnome-disk-utility net-tools xfce4-indicator-plugin papirus-icon-theme krita-gmic xfce4-goodies appimagelauncher ipheth-utils libreoffice libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-math libreoffice-draw doublecmd-common timeshift remmina mc ffmpeg lutris gedit virt-manager steam bless inkscape xrdp ntp sassc boot-repair terminator kdenlive software-properties-common kodi gnome-system-monitor redshift-gtk cool-retro-term
+sudo apt-get install -y freecad flatpak gnome-software-plugin-flatpak python3-pip cura qml-module-qt-labs-qmlmodels grub-customizer haguichi system-config-printer-gnome cups printer-driver-cups-pdf hplip system-config-printer vlc blender curl synaptic firefox firefox-locale-hu wget filezilla catfish ark hardinfo zsh hardinfo filelight gparted okular gdebi qalculate-gtk youtube-dl thunderbird obs-studio audacity handbrake transmission network-manager-openvpn numlockx pinta language-pack-gnome-hu openvpn gimp git piper tcpdump gimp-gmic kmines clementine tar hddtemp lm-sensors screen openssh-client openssh-server muon ksysguard krita xfce4-whiskermenu-plugin htop openjdk-8-jdk mysql-client php unzip p7zip p7zip-full p7zip-rar sudo jarwrapper openjdk-8-jre kio-gdrive gnome-disk-utility net-tools xfce4-indicator-plugin papirus-icon-theme krita-gmic xfce4-goodies appimagelauncher ipheth-utils libreoffice libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-math libreoffice-draw doublecmd-common timeshift remmina mc ffmpeg lutris gedit virt-manager steam bless inkscape xrdp ntp sassc boot-repair terminator kdenlive software-properties-common kodi gnome-system-monitor redshift-gtk cool-retro-term
+
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 sudo systemctl start cups
 
@@ -62,16 +64,22 @@ sudo dpkg -i ~/installer-temp/chrome.deb
 wget -O ~/installer-temp/fdm.deb https://dn3.freedownloadmanager.org/6/latest/freedownloadmanager.deb
 sudo dpkg -i ~/installer-temp/fdm.deb
 
+wget -O ~/installer-temp/sejda.deb https://sejda-cdn.com/downloads/sejda-desktop_7.4.1_amd64.deb
+sudo dpkg -i ~/installer-temp/sejda.deb
+
+wget -O ~/installer-temp/blockbench.deb https://github.com/JannisX11/blockbench/releases/download/v4.2.3/Blockbench_4.2.3.deb
+sudo dpkg -i ~/installer-temp/blockbench.deb
+
 wget -O ~/installer-temp/blobsaver.deb https://github.com/airsquared/blobsaver/releases/download/v3.0.4/blobsaver_3.0.4-1_amd64.deb
 sudo dpkg -i ~/installer-temp/blobsaver.deb
 
 wget -O ~/installer-temp/vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868 
 sudo dpkg -i ~/installer-temp/vscode.deb
 
-wget -O ~/installer-temp/Minecraft-raw.zip https://tlauncher.org/jar
-unzip ~/installer-temp/Minecraft-raw.zip -d ~/installer-temp/
-cp ~/installer-temp/TLaunch* $desktop_path/Utils/Minecraft.jar
-chmod +x $desktop_path/Utils/Minecraft.jar
+#wget -O ~/installer-temp/Minecraft-raw.zip https://tlauncher.org/jar
+#unzip ~/installer-temp/Minecraft-raw.zip -d ~/installer-temp/
+#cp ~/installer-temp/TLaunch* $desktop_path/Utils/Minecraft.jar
+#chmod +x $desktop_path/Utils/Minecraft.jar
 
 touch $desktop_path/Utils/Update.sh
 echo '#!/bin/bash' >> $desktop_path/Utils/Update.sh
