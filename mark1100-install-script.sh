@@ -39,7 +39,6 @@ flatpak install -y flathub us.zoom.Zoom
 flatpak install -y flathub com.github.micahflee.torbrowser-launcher
 flatpak install -y flathub md.obsidian.Obsidian
 flatpak install -y flathub org.onlyoffice.desktopeditors
-flatpak install -y flathub de.haeckerfelix.Shortwave
 
 #XRDP----------------------------------------
 
