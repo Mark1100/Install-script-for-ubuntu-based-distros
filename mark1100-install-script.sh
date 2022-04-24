@@ -20,15 +20,19 @@ sudo add-apt-repository -y ppa:ztefn/haguichi-stable
 
 sudo apt-get update
 
-#FLATPAK
-flatpak install -y flathub org.polymc.PolyMC
-
 #APT--------------------------------------
 sudo apt-get install -y freecad flatpak gnome-software-plugin-flatpak python3-pip cura qml-module-qt-labs-qmlmodels grub-customizer haguichi system-config-printer-gnome cups printer-driver-cups-pdf hplip system-config-printer vlc blender curl synaptic firefox firefox-locale-hu wget filezilla catfish ark hardinfo zsh hardinfo filelight gparted okular gdebi qalculate-gtk youtube-dl thunderbird obs-studio audacity handbrake transmission network-manager-openvpn numlockx pinta language-pack-gnome-hu openvpn gimp git piper tcpdump gimp-gmic kmines clementine tar hddtemp lm-sensors screen openssh-client openssh-server muon ksysguard krita xfce4-whiskermenu-plugin htop openjdk-8-jdk mysql-client php unzip p7zip p7zip-full p7zip-rar sudo jarwrapper openjdk-8-jre kio-gdrive gnome-disk-utility net-tools xfce4-indicator-plugin papirus-icon-theme krita-gmic xfce4-goodies appimagelauncher ipheth-utils libreoffice libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-math libreoffice-draw doublecmd-common timeshift remmina mc ffmpeg lutris gedit virt-manager steam bless inkscape xrdp ntp sassc boot-repair terminator kdenlive software-properties-common kodi gnome-system-monitor redshift-gtk cool-retro-term
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 sudo systemctl start cups
+
+#FLATPAK-------------------------------------------
+flatpak install -y flathub org.polymc.PolyMC
+flatpak install -y flathub com.discordapp.Discord
+flatpak install -y flathub com.heroicgameslauncher.hgl
+flatpak install -y flathub net.blockbench.Blockbench
+flatpak install -y flathub com.brave.Browser
 
 #XRDP----------------------------------------
 
@@ -52,14 +56,8 @@ chmod +x ~/installer-temp/orchis/install.sh
 bash ~/installer-temp/orchis/install.sh
 #THEME----------------------------------------
 
-wget -O ~/installer-temp/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-sudo dpkg -i ~/installer-temp/discord.deb
-
-wget -O ~/installer-temp/komorebi.deb "https://github.com/cheesecakeufo/komorebi/releases/download/v2.1/komorebi-2.1-64-bit.deb"
-sudo dpkg -i ~/installer-temp/komorebi.deb
-
-wget -O ~/installer-temp/heroic.deb "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.0.1/heroic_2.0.1_amd64.deb"
-sudo dpkg -i ~/installer-temp/heroic.deb
+#wget -O ~/installer-temp/komorebi.deb "https://github.com/cheesecakeufo/komorebi/releases/download/v2.1/komorebi-2.1-64-bit.deb"
+#sudo dpkg -i ~/installer-temp/komorebi.deb
 
 wget -O ~/installer-temp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i ~/installer-temp/chrome.deb
@@ -69,9 +67,6 @@ sudo dpkg -i ~/installer-temp/fdm.deb
 
 wget -O ~/installer-temp/sejda.deb https://sejda-cdn.com/downloads/sejda-desktop_7.4.1_amd64.deb
 sudo dpkg -i ~/installer-temp/sejda.deb
-
-wget -O ~/installer-temp/blockbench.deb https://github.com/JannisX11/blockbench/releases/download/v4.2.3/Blockbench_4.2.3.deb
-sudo dpkg -i ~/installer-temp/blockbench.deb
 
 wget -O ~/installer-temp/blobsaver.deb https://github.com/airsquared/blobsaver/releases/download/v3.0.4/blobsaver_3.0.4-1_amd64.deb
 sudo dpkg -i ~/installer-temp/blobsaver.deb
@@ -110,8 +105,8 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get install -y sublime-text
 
-wget -O ~/installer-temp/multimc.deb https://files.multimc.org/downloads/multimc_1.6-1.deb
-sudo dpkg -i ~/installer-temp/multimc.deb
+#wget -O ~/installer-temp/multimc.deb https://files.multimc.org/downloads/multimc_1.6-1.deb
+#sudo dpkg -i ~/installer-temp/multimc.deb
 
 wget -O ~/installer-temp/viber.deb https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
 sudo dpkg -i ~/installer-temp/viber.deb
@@ -133,17 +128,11 @@ wget -O ~/installer-temp/visualbukkit.sh https://github.com/OfficialDonut/Visual
 sudo chmod +x ~/installer-temp/visualbukkit.sh
 #sudo sh /home/installer-temp/visualbukkit.sh
 
-sudo apt install apt-transport-https curl
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install -y brave-browser
-
 wget -O ~/installer-temp/teamviewer.deb https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo dpkg -i ~/installer-temp/teamviewer.deb
 
-wget -O ~/installer-temp/virtualbox.deb "https://download.virtualbox.org/virtualbox/6.1.30/virtualbox-6.1_6.1.30-148432~Ubuntu~eoan_amd64.deb"
-sudo dpkg -i ~/installer-temp/virtualbox.deb
+#wget -O ~/installer-temp/virtualbox.deb "https://download.virtualbox.org/virtualbox/6.1.30/virtualbox-6.1_6.1.30-148432~Ubuntu~eoan_amd64.deb"
+#sudo dpkg -i ~/installer-temp/virtualbox.deb
 
 #MANUAL------------------------------------------
 
