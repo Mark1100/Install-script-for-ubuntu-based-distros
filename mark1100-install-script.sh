@@ -20,6 +20,9 @@ sudo add-apt-repository -y ppa:ztefn/haguichi-stable
 
 sudo apt-get update
 
+#FLATPAK
+flatpak install -y flathub org.polymc.PolyMC
+
 #APT--------------------------------------
 sudo apt-get install -y freecad flatpak gnome-software-plugin-flatpak python3-pip cura qml-module-qt-labs-qmlmodels grub-customizer haguichi system-config-printer-gnome cups printer-driver-cups-pdf hplip system-config-printer vlc blender curl synaptic firefox firefox-locale-hu wget filezilla catfish ark hardinfo zsh hardinfo filelight gparted okular gdebi qalculate-gtk youtube-dl thunderbird obs-studio audacity handbrake transmission network-manager-openvpn numlockx pinta language-pack-gnome-hu openvpn gimp git piper tcpdump gimp-gmic kmines clementine tar hddtemp lm-sensors screen openssh-client openssh-server muon ksysguard krita xfce4-whiskermenu-plugin htop openjdk-8-jdk mysql-client php unzip p7zip p7zip-full p7zip-rar sudo jarwrapper openjdk-8-jre kio-gdrive gnome-disk-utility net-tools xfce4-indicator-plugin papirus-icon-theme krita-gmic xfce4-goodies appimagelauncher ipheth-utils libreoffice libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-math libreoffice-draw doublecmd-common timeshift remmina mc ffmpeg lutris gedit virt-manager steam bless inkscape xrdp ntp sassc boot-repair terminator kdenlive software-properties-common kodi gnome-system-monitor redshift-gtk cool-retro-term
 
