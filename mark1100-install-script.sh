@@ -145,7 +145,7 @@ sudo apt dist-upgrade -y
 sudo apt full-upgrade -y
 
 #nVidia driver 470 verzio-----------------
-sudo apt-get install nvidia-driver-470
+sudo apt-get install nvidia-driver-510
 #nVidia driver 470 verzio-----------------
 
 sudo sh ~/installer-temp/visualbukkit.sh
