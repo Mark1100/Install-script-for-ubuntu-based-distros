@@ -166,5 +166,6 @@ echo -------------------
 echo appimage: etcher openrgb
 echo Default alkalmazasok
 echo Oh-my-ZSH install es powerlevel10k
+echo rendszer tema
 echo grub2 tema
 echo Majd ujrainditas
