@@ -79,9 +79,6 @@ bash ~/installer-temp/orchis/install.sh
 #wget -O ~/installer-temp/komorebi.deb "https://github.com/cheesecakeufo/komorebi/releases/download/v2.1/komorebi-2.1-64-bit.deb"
 #sudo dpkg -i ~/installer-temp/komorebi.deb
 
-wget -O ~/installer-temp/fdm.deb https://dn3.freedownloadmanager.org/6/latest/freedownloadmanager.deb
-sudo dpkg -i ~/installer-temp/fdm.deb
-
 wget -O ~/installer-temp/sejda.deb https://sejda-cdn.com/downloads/sejda-desktop_7.4.1_amd64.deb
 sudo dpkg -i ~/installer-temp/sejda.deb
 
