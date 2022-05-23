@@ -140,5 +140,6 @@ echo appimage: etcher
 echo Default alkalmazasok
 echo Oh-my-ZSH install es powerlevel10k es zsh-autosuggestion https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 echo rendszer tema
+echo graphite cursor
 echo grub2 tema
 echo Majd ujrainditas
