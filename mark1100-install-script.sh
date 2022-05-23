@@ -142,4 +142,5 @@ echo Oh-my-ZSH install es powerlevel10k es zsh-autosuggestion https://github.com
 echo rendszer tema Orchis sudo ./install.sh --dest /usr/share/themes
 echo graphite cursor
 echo grub2 tema
+echo lightdm tema
 echo Majd ujrainditas
