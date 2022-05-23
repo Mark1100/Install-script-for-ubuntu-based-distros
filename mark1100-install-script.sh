@@ -138,7 +138,7 @@ echo /etc/pulse/default.pa--------set-default-sink ESZKOZ-NEVE
 echo -------------------
 echo appimage: etcher
 echo Default alkalmazasok
-echo Oh-my-ZSH install es powerlevel10k
+echo Oh-my-ZSH install es powerlevel10k es zsh-autosuggestion https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 echo rendszer tema
 echo grub2 tema
 echo Majd ujrainditas
