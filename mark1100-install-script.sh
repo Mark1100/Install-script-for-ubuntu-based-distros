@@ -52,6 +52,14 @@ flatpak install -y flathub com.viber.Viber
 flatpak install -y flathub com.github.Eloston.UngoogledChromium
 flatpak install -y flathub com.google.Chrome
 flatpak install -y flathub com.sublimetext.three
+flatpak install -y flathub de.haeckerfelix.Shortwave
+flatpak install -y flathub io.github.seadve.Mousai
+flatpak install -y flathub com.github.liferooter.textpieces
+flatpak install -y flathub org.gustavoperedo.FontDownloader
+flatpak install -y flathub com.github.huluti.Curtail
+flatpak install -y flathub org.gnome.gitlab.YaLTeR.Identity
+flatpak install -y flathub com.rafaelmardojai.Blanket
+flatpak install -y flathub fr.romainvigier.MetadataCleaner
 #FLATPAK-------------------------------------------
 
 #XRDP----------------------------------------
