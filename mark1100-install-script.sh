@@ -60,6 +60,8 @@ flatpak install -y flathub com.github.huluti.Curtail
 flatpak install -y flathub org.gnome.gitlab.YaLTeR.Identity
 flatpak install -y flathub com.rafaelmardojai.Blanket
 flatpak install -y flathub fr.romainvigier.MetadataCleaner
+flatpak install -y flathub com.github.junrrein.PDFSlicer
+flatpak install -y flathub com.github.tchx84.Flatseal
 #FLATPAK-------------------------------------------
 
 #XRDP----------------------------------------
