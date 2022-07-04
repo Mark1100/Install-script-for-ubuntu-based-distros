@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if test `id -u` == 0
+then
+  echo -e "Please don't run this script with root privileges!"
+  exit 1
+fi
+
 desktop_path=$(xdg-user-dir DESKTOP)
 
 sudo apt-get update
